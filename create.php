@@ -33,11 +33,7 @@
 </div>
 
 <?php  
-	$host = "localhost";
-	$user_name = "root";
-	$password = "";
-	$db_name = "test";
-	$db_connection = mysqli_connect($host,$user_name,$password,$db_name);
+include "db_config.php";
 
 	if(isset($_POST['submit'])){
 		$new_name = $_POST['forname'];
